@@ -14,7 +14,7 @@ staffMembersList: list[StaffMember] = [
 def addStaffmember(context: CreateStaffMemberModel):
     IdStaffMember = len(staffMembersList)
     staffMembersList.append(StaffMember(
-        IdStaffMember,
+        str(IdStaffMember),
         context.NameStaffMember,
         context.AgeStaffMember,
         context.RoleStaffMember))
